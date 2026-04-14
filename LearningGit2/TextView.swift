@@ -11,6 +11,9 @@ struct TextView: View {
     var body: some View {
         Text("MyTextViews")
             .font(.largeTitle)
+        
+        Image(systemName: "x.mark.fill")
+            .scaledToFit()
     }
 }
 
