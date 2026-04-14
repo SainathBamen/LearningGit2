@@ -19,6 +19,9 @@ struct TextView: View {
             count += 1
             
         }
+        
+        Circle()
+            .frame(width: 100, height: 100)
     }
 }
 
